@@ -1,8 +1,26 @@
 aid: alan
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alan.png
 name: Alan
-description: 'Alan is a company surfaced as a portfolio company of index-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Alan is a French digital health insurance and healthcare company that combines
+  health insurance (mutuelle / complementary health), preventive care, and daily health
+  support in a single app. It serves businesses of every size (from independent contractors and
+  very small companies to large enterprises) and individuals such as the self-employed, retirees,
+  and civil servants across France. Alan offers fast reimbursements (90% processed within 24 hours),
+  a 24/7 chat clinic (Clinique Alan) staffed by healthcare professionals, mental health support,
+  eyewear coverage, and an HR-facing platform for administering employee health plans. It reports
+  over one million members and 41,000+ companies. This API Evangelist profile was surfaced from the
+  Index Ventures portfolio; Alan does not currently publish a public developer API.'
 url: https://raw.githubusercontent.com/api-evangelist/alan/refs/heads/main/apis.yml
 x-type: company
 x-source: index-ventures-portfolio
@@ -14,6 +32,12 @@ modified: '2026-07-17'
 tags:
 - Company
 - Healthcare
+- Insurance
+- Health Insurance
+- InsurTech
+- Digital Health
+- Employee Benefits
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/alan-domain-security.yml
 - type: Website
-  url: http://alan.eu
+  url: https://alan.com
+- type: WellKnown
+  url: well-known/alan-well-known.yml
+- type: SecurityTxt
+  url: well-known/alan-security.txt
+- type: VulnerabilityDisclosure
+  url: security/alan-vulnerability-disclosure.yml
+- type: Security
+  url: https://alan.com/.well-known/security.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
